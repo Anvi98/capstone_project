@@ -2,4 +2,301 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #D3D3D3;
+}
+
+body {
+  position: relative;
+}
+
+footer {
+  height: 10vh;
+  background-color: rgb(5, 7, 6);
+}
+
+header {
+  z-index: 4;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(5, 7, 6);
+}
+
+header h2 {
+  position: absolute;
+  z-index: 3;
+  top: 40%;
+  left: 100%;
+}
+
+h1, h3 {
+  color: #D3D3D3;
+}
+
+.book {
+  color: #D3D3D3;
+  font-weight: bold;
+  border: none;
+  line-height: 2;
+  padding: .5rem 1rem;
+  width: clamp(200px,40%,300px);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #EC5242;
+}
+
+#logo {
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  right: 0;
+  margin-right: 20px;
+}
+
+.header_top {
+  display: none;
+}
+
+.header_bottom {
+  position: absolute;
+  padding: 20px;
+}
+
+.home {
+  position: relative;
+  text-align: center;
+  padding-top: 25%;
+  min-height: 85vh;
+  background-color: black;
+}
+
+.daft_mobile {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+}
+
+.type {
+  font-size: min(1vh+0.5rem);
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.title {
+  font-size: min(2vh+1rem);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.marky {
+  color: #EC5242;
+  margin-bottom: 10px;
+
+}
+.details_home {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+  padding: 10px;
+  color: #D3D3D3;
+  outline: solid 1px #D3D3D3;
+  background-color: rgba(218, 201, 201, 0.301);
+}
+
+.date {
+  text-align: left;
+  padding: 50px 10px 15px 20px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: black;
+  width: 100%;
+}
+
+.place {
+  font-size: 14px;
+  text-align: left;
+  padding: 0 20px 45px 15px;
+}
+
+.singers {
+  height: 80vh;
+  text-align: center;
+
+}
+
+.program_section {
+  text-align: center;
+  color: #D3D3D3;
+  height: auto;
+  background-image: url("img/program_img.jpg");
+  background-size: cover;
+  padding: 10px 20px 20px 20px;
+}
+
+.section_title {
+  text-align: center;
+  background-color: blueviolet;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.main_program div {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.prog {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content:space-between;
+}
+
+.p1 img {
+  float: left;
+  padding-left: 10px;
+}
+
+.p1 h3 {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.p1,
+.p3 {
+  flex: 1;
+}
+
+.audio {
+  width: 40%;
+}
+
+.prog h3 {
+  color: #EC5242;
+  font-weight: bold;
+}
+
+.singers {
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+}
+
+.partners {
+  height: 25vh;
+}
+
+.singers h2 {
+  margin-top: 30px;
+  color: #D3D3D3;
+
+}
+
+.grid {
+  padding-top: 10px;
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 100%;
+  grid-gap: 15%;
+}
+
+.artist1,
+.artist2 {
+  position: relative;
+}
+
+.no_display {
+  display: none;
+}
+
+.pic {
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+}
+
+.pic {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  float: left;
+}
+
+.artist_info {
+  margin-left: 150px;
+  text-align: left;
+}
+
+.artist_info h3 {
+  color: #000;
+  font-weight: bold;
+}
+
+.description {
+  font-style: italic;
+  color: #EC5242;
+  padding: 7px 0;
+  font-size: 16px;
+}
+
+.details {
+  font-size: 14px;
+  padding: 10px 10px 10px 0;
+  color: #000;
+}
+
+.hr_sep {
+  width: 10%;
+  color: grey;
+  background-color: grey;
+  border: 1px solid grey;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+}
+
+.see_more {
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+  border: 1px solid #EC5242;
+}
+
+.arrow {
+  width: 12px;
+  margin-left: 5px;
+}
+
+
+
+@media screen and (min-width: 768px){
+
+  .home {
+    height: 100vh;
+    display: flex;
+    background: url("img/punk_home.jpg") no-repeat;
+    background-size: contain;
+    background-color: black;
+  }
+
+  .daft_mobile {
+    display: none;
+  }
 }
