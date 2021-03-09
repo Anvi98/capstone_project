@@ -85,13 +85,13 @@ h3 {
 }
 
 .type {
-  font-size: min(1vh+0.5rem);
+  font-size: 2rem;
   font-weight: lighter;
   padding: 5px;
 }
 
 .title {
-  font-size: min(2vh+1rem);
+  font-size: 2vh;
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -104,8 +104,8 @@ h3 {
 .details_home {
   width: 90%;
   margin: 40px auto 20px auto;
-  padding-bottom: 60px;
   padding: 10px;
+  padding-bottom: 60px;
   color: #d3d3d3;
   background-color: rgba(58, 58, 58, 0.301);
 }
@@ -191,6 +191,10 @@ li img {
   height: auto;
   text-align: center;
   padding-bottom: 70px;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  background-color: #fff;
 }
 
 .last_concert {
@@ -203,8 +207,8 @@ li img {
   background-color: blueviolet;
   padding: 10px;
   width: 90%;
-  margin-bottom: 20px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .main_program div {
@@ -243,13 +247,6 @@ li img {
 .prog h3 {
   color: #ec5242;
   font-weight: bold;
-}
-
-.singers {
-  width: 80%;
-  max-width: 400px;
-  margin: auto;
-  background-color: #fff;
 }
 
 .singers h2 {
@@ -302,9 +299,6 @@ li img {
   z-index: 2;
   top: 10px;
   left: 10px;
-}
-
-.pic {
   width: 100%;
   height: 100%;
 }
@@ -322,9 +316,7 @@ li img {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5))); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* IE10+ */
   background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* W3C */
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#002f4b', endColorstr='#00000000', GradientType=0); /* IE6-9 */
 }
 
 .artist_info {
@@ -369,6 +361,7 @@ li img {
     height: auto;
     display: block;
     background-color: black;
+    padding-top: 110px;
   }
 
   .daft_mobile {
@@ -378,7 +371,6 @@ li img {
   .date {
     text-align: center;
     padding: 0;
-    background-color: none;
   }
 
   .details_home {
@@ -390,19 +382,9 @@ li img {
     display: none;
   }
 
-  .date {
-    text-align: center;
-    padding: 0;
-    background-color: none;
-  }
-
   /***********************   */
   .type {
-    font-size: min(40px, 80px);
-  }
-
-  .home {
-    padding-top: 110px;
+    font-size: 40px;
   }
 }
 
@@ -419,6 +401,7 @@ li img {
     background: url("https://www.thisiscolossal.com/wp-content/uploads/2014/03/130304.gif") no-repeat center;
     background-size: contain;
     background-color: black;
+    padding-top: 110px;
   }
 
   .menu {
@@ -443,6 +426,13 @@ li img {
     transition: border-bottom 0.3s ease-in-out 0s;
   }
 
+  .all ul li {
+    justify-content: center;
+    margin: 40px;
+    padding-left: 20px;
+    list-style: none;
+  }
+
   header ul li:hover {
     color: #ec5242;
     border-bottom: yellow solid 2px;
@@ -459,10 +449,6 @@ li img {
 
   .type {
     font-size: 80px;
-  }
-
-  .home {
-    padding-top: 110px;
   }
 
   .illusion {
@@ -488,6 +474,10 @@ li img {
 
   .prog {
     display: block;
+  }
+
+  li img {
+    width: 80px;
   }
 
   .p1 img {
@@ -535,17 +525,6 @@ li img {
     padding: 0;
     justify-content: center;
     display: flex;
-  }
-
-  .all ul li {
-    justify-content: center;
-    margin: 40px;
-    padding-left: 20px;
-    list-style: none;
-  }
-
-  li img {
-    width: 80px;
   }
 
   .wrapper {
