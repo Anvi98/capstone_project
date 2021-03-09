@@ -11,8 +11,9 @@ body {
 }
 
 footer {
-  height: 10vh;
-  background-color: rgb(5, 7, 6);
+  display: none;
+  height: auto;
+  background-color: #000;
 }
 
 header {
@@ -28,6 +29,9 @@ header h2 {
   z-index: 3;
   top: 40%;
   left: 100%;
+}
+header ul {
+  display: none;
 }
 
 h1, h3 {
@@ -49,11 +53,19 @@ h1, h3 {
 #logo {
   position: absolute;
   z-index: 1;
-  width: 50px;
+  width: 40px;
   right: 0;
   margin-right: 20px;
 }
 
+.daft,
+.punk {
+  display: none;
+}
+
+.illusion {
+  display: none;
+}
 .header_top {
   display: none;
 }
@@ -79,6 +91,10 @@ h1, h3 {
 .menu {
   position: absolute;
   z-index: 1;
+}
+
+.partners {
+  display: none;
 }
 
 .type {
@@ -190,10 +206,6 @@ h1, h3 {
   background-color: #fff;
 }
 
-.partners {
-  height: 25vh;
-}
-
 .singers h2 {
   margin-top: 30px;
   color: #D3D3D3;
@@ -290,7 +302,7 @@ h1, h3 {
 
   .home {
     height: 100vh;
-    display: flex;
+    display: block;
     background: url("img/punk_home.jpg") no-repeat;
     background-size: contain;
     background-color: black;
@@ -298,5 +310,240 @@ h1, h3 {
 
   .daft_mobile {
     display: none;
+  }
+
+  .date {
+    text-align: center;
+    padding: 0;
+    background-color: none;
+  }
+
+  .details_home {
+    display: none;
+  }
+
+  .place {
+    display: none;
+  }
+
+  .date {
+    text-align: center;
+    padding: 0;
+    background-color: none;
+  }
+  /************************/
+  .type {
+    font-size: min(40px, 80px);
+  }
+
+  .home {
+    padding-top: 110px;
+  }
+  .daft,
+  .punk {
+  display: block;
+}
+  .daft {
+
+    font-size: 6rem;
+    letter-spacing: 15px;
+    font-weight: bold;
+    top: 40%;
+    left: 5%;
+    position: absolute;
+    color: #D3D3D3;
+  }
+
+  .punk {
+    position: absolute;
+    color: #EC5242;
+    font-weight: bold;
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    font-size: 6rem;
+    letter-spacing: 15px;
+    top: 50%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+  #logo {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    left: 0;
+    margin-left: 60px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  footer {
+    display: block;
+  }
+
+  header ul {
+    float: right;
+    display: flex;
+    list-style: none;
+    margin: 20px;
+  }
+
+  header ul li {
+    margin-right: 60px;
+    padding: 10px 0;
+    transition: border-bottom 0.3s ease-in-out 0s;
+  }
+
+  header ul li:hover {
+    color: #EC5242;
+    border-bottom: yellow solid 2px;
+  }
+
+  header ul li a {
+    text-decoration: none;
+
+  }
+
+  .about {
+    color: #EC5242;
+    font-weight: bold;
+  }
+
+  .type {
+    font-size: 80px;
+  }
+
+  .home {
+    padding-top: 110px;
+  }
+
+  .illusion {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+  }
+  .daft,
+.punk {
+  display: block;
+}
+  .daft {
+
+    font-size: 8.5rem;
+    letter-spacing: 15px;
+    font-weight: bold;
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    color: #D3D3D3;
+  }
+
+  .punk {
+    position: absolute;
+    color: #EC5242;
+    font-weight: bold;
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    font-size: 8.5rem;
+    letter-spacing: 15px;
+    top: 68%;
+    left: 5%;
+  }
+
+  .section_title {
+    margin: auto;
+    margin-top: 30px;
+    width: 30%;
+  }
+
+  .main_program {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+  }
+
+  .prog {
+    display: block;
+  }
+
+  .p1 img {
+    float: none;
+  }
+  
+  .main_program div {
+    text-align: center;
+  }
+
+  .program_section {
+    height: 70vh;
+  }
+
+  .grid {
+    width: 70%;
+    margin: auto;
+    margin-top: 8%;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+  }
+
+  .singers {
+    height: auto;
+    padding-bottom: 130px;
+  }
+
+  .partners {
+    display: block;
+    height: auto;
+  }
+
+  .all {
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    margin-top: 60px;
+    background-color: #EC5242;
+  }
+
+  .all ul {
+    padding: 0px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .all ul li {
+    justify-content: center;
+    margin: 40px;
+    padding-left: 20px;
+    list-style: none;
+  }
+
+  li img {
+    width: 80px;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 85%;
+    margin: auto;
+  }
+
+  .footer_logo {
+    width: 300px;
+  }
+
+  .wrapper p {
+    margin: 30px;
+    margin-top: 60px;
   }
 }
