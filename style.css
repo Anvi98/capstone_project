@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
 body {
@@ -30,24 +30,28 @@ header h2 {
   top: 40%;
   left: 100%;
 }
+
 header ul {
   display: none;
 }
 
-h1, h3 {
-  color: #D3D3D3;
+h1,
+h3 {
+  color: #d3d3d3;
 }
 
 .book {
-  color: #D3D3D3;
+  color: #d3d3d3;
   font-weight: bold;
   border: none;
   line-height: 2;
-  padding: .5rem 1rem;
-  width: clamp(200px,40%,300px);
+  padding: 0.5rem 1rem;
+  min-width: 200px;
+  width: 40%;
+  max-width: 300px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-color: #EC5242;
+  background-color: #ec5242;
 }
 
 #logo {
@@ -66,6 +70,7 @@ h1, h3 {
 .illusion {
   display: none;
 }
+
 .header_top {
   display: none;
 }
@@ -98,30 +103,30 @@ h1, h3 {
 }
 
 .type {
-  font-size: min(1vh+0.5rem);
+  font-size: 2rem;
   font-weight: lighter;
   padding: 5px;
 }
 
 .title {
-  font-size: min(2vh+1rem);
+  font-size: 1rem;
   padding: 5px;
   margin-bottom: 10px;
 }
 
 .marky {
-  color: #EC5242;
+  color: #ec5242;
   margin-bottom: 10px;
-
 }
+
 .details_home {
   width: 90%;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 60px;
-  padding: 10px;
-  color: #D3D3D3;
-  outline: solid 1px #D3D3D3;
+  color: #d3d3d3;
+  outline: solid 1px #d3d3d3;
   background-color: rgba(218, 201, 201, 0.301);
 }
 
@@ -143,12 +148,14 @@ h1, h3 {
 .singers {
   height: 80vh;
   text-align: center;
-
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
 }
 
 .program_section {
   text-align: center;
-  color: #D3D3D3;
+  color: #d3d3d3;
   height: auto;
   background-image: url("img/program_img.jpg");
   background-size: cover;
@@ -172,7 +179,7 @@ h1, h3 {
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .p1 img {
@@ -196,20 +203,13 @@ h1, h3 {
 }
 
 .prog h3 {
-  color: #EC5242;
+  color: #ec5242;
   font-weight: bold;
-}
-
-.singers {
-  width: 95%;
-  margin: auto;
-  background-color: #fff;
 }
 
 .singers h2 {
   margin-top: 30px;
-  color: #D3D3D3;
-
+  color: #d3d3d3;
 }
 
 .grid {
@@ -233,9 +233,6 @@ h1, h3 {
   z-index: 2;
   top: 10px;
   left: 10px;
-}
-
-.pic {
   position: absolute;
   width: 120px;
   height: 120px;
@@ -254,7 +251,7 @@ h1, h3 {
 
 .description {
   font-style: italic;
-  color: #EC5242;
+  color: #ec5242;
   padding: 7px 0;
   font-size: 16px;
 }
@@ -288,7 +285,7 @@ h1, h3 {
   font-weight: bold;
   color: black;
   background-color: transparent;
-  border: 1px solid #EC5242;
+  border: 1px solid #ec5242;
 }
 
 .arrow {
@@ -296,16 +293,14 @@ h1, h3 {
   margin-left: 5px;
 }
 
-
-
-@media screen and (min-width: 768px){
-
+@media screen and (min-width: 768px) {
   .home {
     height: 100vh;
     display: block;
     background: url("img/punk_home.jpg") no-repeat;
     background-size: contain;
     background-color: black;
+    padding-top: 110px;
   }
 
   .daft_mobile {
@@ -315,7 +310,6 @@ h1, h3 {
   .date {
     text-align: center;
     padding: 0;
-    background-color: none;
   }
 
   .details_home {
@@ -326,42 +320,33 @@ h1, h3 {
     display: none;
   }
 
-  .date {
-    text-align: center;
-    padding: 0;
-    background-color: none;
-  }
-  /************************/
   .type {
-    font-size: min(40px, 80px);
+    font-size: 40px;
   }
 
-  .home {
-    padding-top: 110px;
-  }
   .daft,
   .punk {
-  display: block;
-}
-  .daft {
+    display: block;
+  }
 
+  .daft {
     font-size: 6rem;
     letter-spacing: 15px;
     font-weight: bold;
     top: 40%;
     left: 5%;
     position: absolute;
-    color: #D3D3D3;
+    color: #d3d3d3;
   }
 
   .punk {
     position: absolute;
-    color: #EC5242;
+    color: #ec5242;
     font-weight: bold;
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     font-size: 6rem;
     letter-spacing: 15px;
     top: 50%;
@@ -369,8 +354,7 @@ h1, h3 {
   }
 }
 
-@media screen and (min-width: 1024px){
-
+@media screen and (min-width: 1024px) {
   #logo {
     position: absolute;
     z-index: 1;
@@ -400,18 +384,24 @@ h1, h3 {
     transition: border-bottom 0.3s ease-in-out 0s;
   }
 
+  .all ul li {
+    justify-content: center;
+    margin: 40px;
+    padding-left: 20px;
+    list-style: none;
+  }
+
   header ul li:hover {
-    color: #EC5242;
+    color: #ec5242;
     border-bottom: yellow solid 2px;
   }
 
   header ul li a {
     text-decoration: none;
-
   }
 
   .about {
-    color: #EC5242;
+    color: #ec5242;
     font-weight: bold;
   }
 
@@ -430,29 +420,30 @@ h1, h3 {
     left: 0;
     width: 100px;
   }
-  .daft,
-.punk {
-  display: block;
-}
-  .daft {
 
+  .daft,
+  .punk {
+    display: block;
+  }
+
+  .daft {
     font-size: 8.5rem;
     letter-spacing: 15px;
     font-weight: bold;
     top: 50%;
     left: 5%;
     position: absolute;
-    color: #D3D3D3;
+    color: #d3d3d3;
   }
 
   .punk {
     position: absolute;
-    color: #EC5242;
+    color: #ec5242;
     font-weight: bold;
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     font-size: 8.5rem;
     letter-spacing: 15px;
     top: 68%;
@@ -476,10 +467,14 @@ h1, h3 {
     display: block;
   }
 
+  li img {
+    width: 80px;
+  }
+
   .p1 img {
     float: none;
   }
-  
+
   .main_program div {
     text-align: center;
   }
@@ -512,24 +507,13 @@ h1, h3 {
     width: 100vw;
     height: 100%;
     margin-top: 60px;
-    background-color: #EC5242;
+    background-color: #ec5242;
   }
 
   .all ul {
-    padding: 0px;
+    padding: 0;
     justify-content: center;
     display: flex;
-  }
-
-  .all ul li {
-    justify-content: center;
-    margin: 40px;
-    padding-left: 20px;
-    list-style: none;
-  }
-
-  li img {
-    width: 80px;
   }
 
   .wrapper {

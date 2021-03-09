@@ -25,6 +25,7 @@ header h2 {
   top: 40%;
   left: 100%;
 }
+
 header ul {
   display: none;
 }
@@ -85,7 +86,6 @@ h1 {
 .category {
   font-weight: bold;
   text-align: center;
-
 }
 
 .price {
@@ -97,7 +97,6 @@ h1 {
   position: absolute;
   width: 100%;
   top: 20%;
-
 }
 
 button {
@@ -115,20 +114,19 @@ button {
 }
 
 .contact:hover {
-  color: #EC5242;
+  color: #ec5242;
   text-decoration: underline;
 }
-@media screen and (min-width: 768px){
-  .wrap {
-    width: 80%; 
-  }
 
+@media screen and (min-width: 768px) {
+  .wrap {
+    width: 80%;
+  }
 }
 
-@media screen and (min-width: 1024px){
-
+@media screen and (min-width: 1024px) {
   .wrap {
-    width: 50%; 
+    width: 50%;
   }
 
   #logo {
@@ -157,18 +155,16 @@ button {
   }
 
   header ul li:hover {
-    color: #EC5242;
+    color: #ec5242;
     border-bottom: yellow solid 2px;
   }
 
   header ul li a {
     text-decoration: none;
-
   }
 
   .about {
-    color: #EC5242;
+    color: #ec5242;
     font-weight: bold;
   }
-
 }
