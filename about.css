@@ -66,8 +66,9 @@ h1, h3 {
   position: relative;
   text-align: center;
   padding-top: 25%;
-  min-height: 85vh;
   background-color: black;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .daft_mobile {
@@ -103,8 +104,12 @@ h1, h3 {
   padding-bottom: 60px;
   padding: 10px;
   color: #D3D3D3;
-  outline: solid 1px #D3D3D3;
-  background-color: rgba(218, 201, 201, 0.301);
+  background-color: rgba(58, 58, 58, 0.301);
+}
+
+.contact_info {
+  color: #000;
+  padding: 30px 0 20px 0;
 }
 
 .contact {
@@ -142,12 +147,17 @@ li img {
   width: 40px;
 }
 
+.infos {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
 .date {
   text-align: left;
   padding: 50px 10px 15px 20px;
   font-weight: bold;
   font-size: 1.3rem;
-  background-color: black;
   width: 100%;
 }
 
@@ -234,7 +244,8 @@ li img {
 }
 
 .singers {
-  width: 100%;
+  width: 80%;
+  max-width: 400px;
   margin: auto;
   background-color: #fff;
 }
@@ -268,12 +279,16 @@ li img {
 }
 
 .year {
+  z-index: 1;
+  color: #fff;
   font-size: 2rem;
   top: 35%;
   left: 40%;
 }
 
 .event {
+  z-index: 1;
+  color: #fff;
   top: 65%;
   margin-left: 15%;
 }
@@ -291,6 +306,22 @@ li img {
 .pic {
   width: 100%;
   height: 100%;
+}
+
+.artist1:after,
+.artist2:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: -moz-linear-gradient(top, rgba(0,47,75,0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(220, 66, 37, 0.5)), color-stop(100%,rgba(0,47,75,0.5))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 .artist_info {
@@ -352,10 +383,8 @@ li img {
 @media screen and (min-width: 768px){
 
   .home {
-    height: 100vh;
+    height: auto;
     display: block;
-    background: url("img/punk_home.jpg") no-repeat;
-    background-size: contain;
     background-color: black;
   }
 
@@ -370,7 +399,8 @@ li img {
   }
 
   .details_home {
-    display: none;
+    font-size: 25px;
+    width: 70%;
   }
 
   .place {
@@ -390,34 +420,7 @@ li img {
   .home {
     padding-top: 110px;
   }
-  .daft,
-  .punk {
-  display: block;
-}
-  .daft {
 
-    font-size: 6rem;
-    letter-spacing: 15px;
-    font-weight: bold;
-    top: 40%;
-    left: 5%;
-    position: absolute;
-    color: #D3D3D3;
-  }
-
-  .punk {
-    position: absolute;
-    color: #EC5242;
-    font-weight: bold;
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
-    font-size: 6rem;
-    letter-spacing: 15px;
-    top: 50%;
-    left: 5%;
-  }
 }
 
 @media screen and (min-width: 1024px){
@@ -430,12 +433,19 @@ li img {
     margin-left: 60px;
   }
 
+  .home {
+    background: url("https://www.thisiscolossal.com/wp-content/uploads/2014/03/130304.gif") no-repeat center;
+    background-size: contain;
+    background-color: black;
+  }
+
   .menu {
     display: none;
   }
 
   footer {
     display: block;
+    height: 25vh;
   }
 
   header ul {
@@ -481,34 +491,6 @@ li img {
     left: 0;
     width: 100px;
   }
-  .daft,
-.punk {
-  display: block;
-}
-  .daft {
-
-    font-size: 8.5rem;
-    letter-spacing: 15px;
-    font-weight: bold;
-    top: 50%;
-    left: 5%;
-    position: absolute;
-    color: #D3D3D3;
-  }
-
-  .punk {
-    position: absolute;
-    color: #EC5242;
-    font-weight: bold;
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
-    font-size: 8.5rem;
-    letter-spacing: 15px;
-    top: 68%;
-    left: 5%;
-  }
 
   .section_title {
     margin: auto;
@@ -542,20 +524,22 @@ li img {
   .grid {
     width: 70%;
     margin: auto;
-    margin-top: 8%;
-    grid-template-rows: 200px 200px;
+    margin-top: 2%;
+    grid-template-rows: 200px;
     grid-template-columns: 45% 45%;
     grid-gap: 10%;
   }
 
   .singers {
     height: auto;
-    padding-bottom: 130px;
+    max-width: 80%;
+    padding-bottom: 30px;
   }
 
   .partners {
     display: block;
     height: auto;
+    margin-bottom: 100px;
   }
 
   .all {
