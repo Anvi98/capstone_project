@@ -1,0 +1,600 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #D3D3D3;
+}
+
+body {
+  position: relative;
+}
+
+footer {
+  height: auto;
+  background-color: #000;
+}
+
+header {
+  z-index: 4;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(5, 7, 6);
+}
+
+header h2 {
+  position: absolute;
+  z-index: 3;
+  top: 40%;
+  left: 100%;
+}
+header ul {
+  display: none;
+}
+
+h1, h3 {
+  color: #D3D3D3;
+}
+
+#logo {
+  position: absolute;
+  z-index: 1;
+  width: 40px;
+  right: 0;
+  margin-right: 20px;
+}
+
+.daft,
+.punk {
+  display: none;
+}
+
+.illusion {
+  display: none;
+}
+.header_top {
+  display: none;
+}
+
+.header_bottom {
+  position: absolute;
+  padding: 20px;
+}
+
+.home {
+  position: relative;
+  text-align: center;
+  padding-top: 25%;
+  min-height: 85vh;
+  background-color: black;
+}
+
+.daft_mobile {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+}
+
+.type {
+  font-size: min(1vh+0.5rem);
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.title {
+  font-size: min(2vh+1rem);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.marky {
+  color: #EC5242;
+  margin-bottom: 10px;
+
+}
+.details_home {
+  width: 90%;
+  margin: 40px auto 20px auto;
+  padding-bottom: 60px;
+  padding: 10px;
+  color: #D3D3D3;
+  outline: solid 1px #D3D3D3;
+  background-color: rgba(218, 201, 201, 0.301);
+}
+
+.contact {
+  text-decoration: underline;
+  font-size: 15px;
+  color: #EC5242;
+  padding-bottom: 30px;
+}
+
+.contact:hover {
+  cursor: pointer;
+}
+
+.all {
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  margin-top: 10px;
+  background-color: #EC5242;
+}
+
+.all ul {
+  padding: 0px;
+  justify-content: center;
+  display: flex;
+}
+
+.all ul li {
+  justify-content: center;
+  margin: 10px;
+  list-style: none;
+}
+
+li img {
+  width: 40px;
+}
+
+.date {
+  text-align: left;
+  padding: 50px 10px 15px 20px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: black;
+  width: 100%;
+}
+
+.place {
+  font-size: 14px;
+  text-align: left;
+  padding: 0 20px 45px 15px;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.wrapper p {
+  margin: 30px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.footer_logo {
+  position: absolute;
+  width: 100px;
+}
+
+.singers {
+  height: auto;
+  text-align: center;
+  padding-bottom: 70px;
+
+}
+
+.last_concert {
+  color: #000;
+  padding: 10px;
+}
+
+.section_title {
+  text-align: center;
+  background-color: blueviolet;
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 20px;
+  margin: auto;
+}
+
+.main_program div {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.prog {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content:space-between;
+}
+
+.p1 img {
+  float: left;
+  padding-left: 10px;
+}
+
+.p1 h3 {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.p1,
+.p3 {
+  flex: 1;
+}
+
+.audio {
+  width: 40%;
+}
+
+.prog h3 {
+  color: #EC5242;
+  font-weight: bold;
+}
+
+.singers {
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+}
+
+.singers h2 {
+  margin-top: 30px;
+  color: #D3D3D3;
+
+}
+
+.grid {
+  padding-top: 10px;
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 100%;
+  grid-gap: 15%;
+}
+
+.artist1,
+.artist2 {
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+
+.artist1 h3,
+.artist1 p,
+.artist2 h3,
+.artist2 p {
+  position: absolute;
+}
+
+.year {
+  font-size: 2rem;
+  top: 35%;
+  left: 40%;
+}
+
+.event {
+  top: 65%;
+  margin-left: 15%;
+}
+
+.no_display {
+  display: none;
+}
+
+.pic {
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+}
+
+.artist_info {
+  margin-left: 150px;
+  text-align: left;
+}
+
+.artist_info h3 {
+  color: #000;
+  font-weight: bold;
+}
+
+.description {
+  font-style: italic;
+  color: #EC5242;
+  padding: 7px 0;
+  font-size: 16px;
+}
+
+.details {
+  font-size: 14px;
+  padding: 10px 10px 10px 0;
+  color: #000;
+}
+
+.hr_sep {
+  width: 10%;
+  color: grey;
+  background-color: grey;
+  border: 1px solid grey;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+}
+
+.see_more {
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+  border: 1px solid #EC5242;
+}
+
+.arrow {
+  width: 12px;
+  margin-left: 5px;
+}
+
+
+
+@media screen and (min-width: 768px){
+
+  .home {
+    height: 100vh;
+    display: block;
+    background: url("img/punk_home.jpg") no-repeat;
+    background-size: contain;
+    background-color: black;
+  }
+
+  .daft_mobile {
+    display: none;
+  }
+
+  .date {
+    text-align: center;
+    padding: 0;
+    background-color: none;
+  }
+
+  .details_home {
+    display: none;
+  }
+
+  .place {
+    display: none;
+  }
+
+  .date {
+    text-align: center;
+    padding: 0;
+    background-color: none;
+  }
+  /************************/
+  .type {
+    font-size: min(40px, 80px);
+  }
+
+  .home {
+    padding-top: 110px;
+  }
+  .daft,
+  .punk {
+  display: block;
+}
+  .daft {
+
+    font-size: 6rem;
+    letter-spacing: 15px;
+    font-weight: bold;
+    top: 40%;
+    left: 5%;
+    position: absolute;
+    color: #D3D3D3;
+  }
+
+  .punk {
+    position: absolute;
+    color: #EC5242;
+    font-weight: bold;
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    font-size: 6rem;
+    letter-spacing: 15px;
+    top: 50%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+  #logo {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    left: 0;
+    margin-left: 60px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  footer {
+    display: block;
+  }
+
+  header ul {
+    float: right;
+    display: flex;
+    list-style: none;
+    margin: 20px;
+  }
+
+  header ul li {
+    margin-right: 60px;
+    padding: 10px 0;
+    transition: border-bottom 0.3s ease-in-out 0s;
+  }
+
+  header ul li:hover {
+    color: #EC5242;
+    border-bottom: yellow solid 2px;
+  }
+
+  header ul li a {
+    text-decoration: none;
+
+  }
+
+  .about {
+    color: #EC5242;
+    font-weight: bold;
+  }
+
+  .type {
+    font-size: 80px;
+  }
+
+  .home {
+    padding-top: 110px;
+  }
+
+  .illusion {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+  }
+  .daft,
+.punk {
+  display: block;
+}
+  .daft {
+
+    font-size: 8.5rem;
+    letter-spacing: 15px;
+    font-weight: bold;
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    color: #D3D3D3;
+  }
+
+  .punk {
+    position: absolute;
+    color: #EC5242;
+    font-weight: bold;
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    font-size: 8.5rem;
+    letter-spacing: 15px;
+    top: 68%;
+    left: 5%;
+  }
+
+  .section_title {
+    margin: auto;
+    margin-top: 30px;
+    width: 30%;
+  }
+
+  .main_program {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+  }
+
+  .prog {
+    display: block;
+  }
+
+  .p1 img {
+    float: none;
+  }
+  
+  .main_program div {
+    text-align: center;
+  }
+
+  .program_section {
+    height: 70vh;
+  }
+
+  .grid {
+    width: 70%;
+    margin: auto;
+    margin-top: 8%;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+  }
+
+  .singers {
+    height: auto;
+    padding-bottom: 130px;
+  }
+
+  .partners {
+    display: block;
+    height: auto;
+  }
+
+  .all {
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    margin-top: 60px;
+    background-color: #EC5242;
+  }
+
+  .all ul {
+    padding: 0px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .all ul li {
+    justify-content: center;
+    margin: 40px;
+    padding-left: 20px;
+    list-style: none;
+  }
+
+  li img {
+    width: 80px;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 85%;
+    margin: auto;
+  }
+
+  .footer_logo {
+    width: 300px;
+  }
+
+  .wrapper p {
+    margin: 30px;
+    margin-top: 60px;
+  }
+}
