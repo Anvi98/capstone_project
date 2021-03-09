@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  z-index: 4;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  opacity: 0.8;
+  background-color: rgb(5, 7, 6);
+}
+
+header h2 {
+  position: absolute;
+  z-index: 3;
+  top: 40%;
+  left: 100%;
+}
+header ul {
+  display: none;
+}
+
+h1 {
+  padding: 120px 0 30px 30px;
+  float: left;
+  color: #fff;
+  font-size: 2rem;
+}
+
+#logo {
+  position: absolute;
+  z-index: 1;
+  width: 40px;
+  right: 0;
+  margin-right: 20px;
+}
+
+.header_top {
+  display: none;
+}
+
+.header_bottom {
+  position: absolute;
+  padding: 20px;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+}
+
+.ticket {
+  height: 100vh;
+  background-image: url("img/profile_daft.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: blueviolet;
+  position: relative;
+}
+
+.grid {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 50px;
+  margin-bottom: 30px;
+}
+
+.category,
+.price {
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+.category {
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.price {
+  text-align: center;
+}
+
+.wrap {
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+
+}
+
+button {
+  padding: 10px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.contact {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 10px 10px;
+}
+
+.contact:hover {
+  color: #EC5242;
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px){
+  .wrap {
+    width: 80%; 
+  }
+
+}
+
+@media screen and (min-width: 1024px){
+
+  .wrap {
+    width: 50%; 
+  }
+
+  #logo {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    left: 0;
+    margin-left: 60px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  header ul {
+    float: right;
+    display: flex;
+    list-style: none;
+    margin: 20px;
+  }
+
+  header ul li {
+    margin-right: 60px;
+    padding: 10px 0;
+    transition: border-bottom 0.3s ease-in-out 0s;
+  }
+
+  header ul li:hover {
+    color: #EC5242;
+    border-bottom: yellow solid 2px;
+  }
+
+  header ul li a {
+    text-decoration: none;
+
+  }
+
+  .about {
+    color: #EC5242;
+    font-weight: bold;
+  }
+
+}

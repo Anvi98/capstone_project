@@ -361,24 +361,6 @@ li img {
   width: 40px;
 }
 
-.see_more {
-  width: 90%;
-  padding: 15px;
-  margin: auto;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: black;
-  background-color: transparent;
-  border: 1px solid #EC5242;
-}
-
-.arrow {
-  width: 12px;
-  margin-left: 5px;
-}
-
-
 
 @media screen and (min-width: 768px){
 
