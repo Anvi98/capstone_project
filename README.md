@@ -64,7 +64,7 @@ For this first approach, I used:
 This project is [MIT](./LICENSE) licensed.
 
 >## Authors
- 👤 **Alex E**
+ 👤 **Alex Anvi Eponon**
 - GitHub: [@Anvi98](https://github.com/Anvi98)
 - Twitter: [@anvi_al](https://twitter.com/anvi_al)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/anvi-alex-eponon/)
