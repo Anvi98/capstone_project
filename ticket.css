@@ -159,7 +159,7 @@ button {
 
   header ul li:hover {
     color: #ec5242;
-    border-bottom: yellow solid 2px;
+    border-bottom: #d3d3d3 solid 2px;
   }
 
   header ul li a {
