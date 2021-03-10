@@ -213,6 +213,11 @@ li img {
   margin-bottom: 20px;
 }
 
+.main_program {
+  display: flex;
+  flex-direction: column;
+}
+
 .main_program div {
   text-align: left;
   margin-bottom: 20px;
@@ -411,6 +416,10 @@ li img {
   .all ul,
   .wrapper {
     display: flex;
+  }
+
+  .main_program {
+    flex-direction: row;
   }
 
   header ul {
