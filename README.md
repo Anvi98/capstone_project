@@ -32,7 +32,7 @@ For this first approach, I used:
 - Technologies used: Responsive Web Design
 
 >## Live Demo
-[Live Demo Link](https://anvi98.github.io/capstone_project/)
+[Live Demo Link](https://anvi98.github.io/capstone_project/) <br>
 [Presentation video Link](https://www.loom.com/share/4dc296b96c524a759c1be1394af8fd8c)
 >## Getting started
 
