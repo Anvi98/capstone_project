@@ -71,8 +71,6 @@ h3 {
   margin-right: 20px;
 }
 
-
-
 .header_bottom {
   position: absolute;
   padding: 20px;
@@ -370,6 +368,12 @@ h3 {
     display: block;
   }
 
+  header ul {
+    float: right;
+    list-style: none;
+    margin: 20px;
+  }
+
   header ul,
   .main_program,
   .all ul,
@@ -380,12 +384,9 @@ h3 {
 
   .main_program {
     flex-direction: row;
-  }
-
-  header ul {
-    float: right;
-    list-style: none;
-    margin: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
   }
 
   header ul li {
@@ -458,12 +459,6 @@ h3 {
     margin: auto;
     margin-top: 30px;
     width: 30%;
-  }
-
-  .main_program {
-    width: 80%;
-    margin: auto;
-    margin-top: 100px;
   }
 
   li img {
