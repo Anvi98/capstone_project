@@ -157,8 +157,9 @@ h3 {
 }
 
 .section_title {
+  color: #272a31;
   text-align: center;
-  background-color: blueviolet;
+  background-color: #d3d3d3;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -208,7 +209,7 @@ h3 {
 
 .singers h2 {
   margin-top: 30px;
-  color: #d3d3d3;
+  color: #272a31;
 }
 
 .grid {

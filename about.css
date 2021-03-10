@@ -205,8 +205,9 @@ li img {
 }
 
 .section_title {
+  color: #272a31;
   text-align: center;
-  background-color: blueviolet;
+  background-color: #d3d3d3;
   padding: 10px;
   width: 90%;
   margin: auto;
