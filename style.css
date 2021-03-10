@@ -62,6 +62,10 @@ h3 {
   letter-spacing: 2px;
   background-color: #ec5242;
 }
+.book:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 #logo {
   position: absolute;
