@@ -39,7 +39,7 @@ header ul {
 }
 
 h1 {
-  padding: 120px 0 30px 30px;
+  padding: 50px 0 30px 30px;
   float: left;
   color: #fff;
   font-size: 2rem;
@@ -77,20 +77,30 @@ h1 {
   width: 90%;
   margin: auto;
   display: grid;
+  background-color: #fff;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50px 50px;
   margin-bottom: 30px;
+  background-image: repeating-linear-gradient(135deg, #F29B91 0px, #F09290 30px, transparent 30px, transparent 50px, #83B3DB 50px, #84ADCB 80px, transparent 80px, transparent 100px);
+  padding: 10px;
+
 }
 
 .category,
 .price {
-  border: 1px solid #fff;
+  color: #000;
+  border: 1px solid rgb(221, 221, 221);
+  background-color: #fff;
   padding: 10px;
 }
 
 .category {
   font-weight: bold;
   text-align: center;
+}
+
+.price label {
+  color: #000;
 }
 
 .price {
