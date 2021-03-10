@@ -32,7 +32,7 @@ For this first approach, I used:
 - Technologies used: Responsive Web Design
 
 >## Live Demo
-[Live Demo Link](https://anvi98.github.io/Project-3-Newsweek/)
+[Live Demo Link](https://anvi98.github.io/capstone_project/)
 >## Getting started
 
 - npm install bootstrap
