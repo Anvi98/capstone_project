@@ -81,7 +81,7 @@ h1 {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50px 50px;
   margin-bottom: 30px;
-  background-image: repeating-linear-gradient(135deg, #F29B91 0px, #F09290 30px, transparent 30px, transparent 50px, #83B3DB 50px, #84ADCB 80px, transparent 80px, transparent 100px);
+  background-image: repeating-linear-gradient(135deg, #F29B91 0px, #ec5242 30px, transparent 30px, transparent 50px, #83B3DB 50px, #84ADCB 80px, transparent 80px, transparent 100px);
   padding: 10px;
 
 }
