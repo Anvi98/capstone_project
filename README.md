@@ -53,8 +53,8 @@ For this first approach, I used:
 
 >## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
+- ![Cindy Shin](https://www.behance.net/adagio07)
+- Inspiration (Daft Punk)
 - Learning
 
 >## 📝 License
