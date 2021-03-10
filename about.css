@@ -10,9 +10,13 @@ body {
   position: relative;
 }
 
+footer,
+.home {
+  background-color: black;
+}
+
 footer {
   height: auto;
-  background-color: #000;
 }
 
 header {
@@ -48,14 +52,9 @@ h3 {
 }
 
 .daft,
-.punk {
-  display: none;
-}
-
-.illusion {
-  display: none;
-}
-
+.punk,
+.no_display,
+.illusion,
 .header_top {
   display: none;
 }
@@ -69,7 +68,6 @@ h3 {
   position: relative;
   text-align: center;
   padding-top: 25%;
-  background-color: black;
   padding-bottom: 20px;
   margin-bottom: 30px;
 }
@@ -137,7 +135,6 @@ h3 {
 .all ul {
   padding: 0;
   justify-content: center;
-  display: flex;
 }
 
 .all ul li {
@@ -170,8 +167,13 @@ li img {
   padding: 0 20px 45px 15px;
 }
 
+.all ul,
+.prog,
 .wrapper {
   display: flex;
+}
+
+.wrapper {
   width: 100%;
   margin: auto;
 }
@@ -220,7 +222,6 @@ li img {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -289,10 +290,6 @@ li img {
   color: #fff;
   top: 65%;
   margin-left: 15%;
-}
-
-.no_display {
-  display: none;
 }
 
 .pic {
@@ -364,7 +361,8 @@ li img {
     padding-top: 110px;
   }
 
-  .daft_mobile {
+  .daft_mobile,
+  .place {
     display: none;
   }
 
@@ -378,11 +376,6 @@ li img {
     width: 70%;
   }
 
-  .place {
-    display: none;
-  }
-
-  /***********************   */
   .type {
     font-size: 40px;
   }
@@ -413,9 +406,15 @@ li img {
     height: 25vh;
   }
 
+  header ul,
+  .main_program,
+  .all ul,
+  .wrapper {
+    display: flex;
+  }
+
   header ul {
     float: right;
-    display: flex;
     list-style: none;
     margin: 20px;
   }
@@ -469,7 +468,6 @@ li img {
     width: 80%;
     margin: auto;
     margin-top: 100px;
-    display: flex;
   }
 
   .prog {
@@ -524,11 +522,9 @@ li img {
   .all ul {
     padding: 0;
     justify-content: center;
-    display: flex;
   }
 
   .wrapper {
-    display: flex;
     width: 85%;
     margin: auto;
   }

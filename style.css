@@ -10,10 +10,14 @@ body {
   position: relative;
 }
 
-footer {
-  display: none;
-  height: auto;
+footer,
+.home,
+.date {
   background-color: #000;
+}
+
+footer {
+  height: auto;
 }
 
 header {
@@ -31,7 +35,12 @@ header h2 {
   left: 100%;
 }
 
-header ul {
+header ul,
+footer,
+.daft,
+.punk,
+.illusion,
+.header_top {
   display: none;
 }
 
@@ -62,18 +71,7 @@ h3 {
   margin-right: 20px;
 }
 
-.daft,
-.punk {
-  display: none;
-}
 
-.illusion {
-  display: none;
-}
-
-.header_top {
-  display: none;
-}
 
 .header_bottom {
   position: absolute;
@@ -85,7 +83,6 @@ h3 {
   text-align: center;
   padding-top: 25%;
   min-height: 85vh;
-  background-color: black;
 }
 
 .daft_mobile {
@@ -135,7 +132,6 @@ h3 {
   padding: 50px 10px 15px 20px;
   font-weight: bold;
   font-size: 1.3rem;
-  background-color: black;
   width: 100%;
 }
 
@@ -303,21 +299,15 @@ h3 {
     padding-top: 110px;
   }
 
-  .daft_mobile {
+  .daft_mobile,
+  .details_home,
+  .place {
     display: none;
   }
 
   .date {
     text-align: center;
     padding: 0;
-  }
-
-  .details_home {
-    display: none;
-  }
-
-  .place {
-    display: none;
   }
 
   .type {
@@ -367,13 +357,24 @@ h3 {
     display: none;
   }
 
-  footer {
+  footer,
+  .illusion,
+  .daft,
+  .punk,
+  .prog {
     display: block;
+  }
+
+  header ul,
+  .main_program,
+  .all ul,
+  .wrapper,
+  .partners {
+    display: flex;
   }
 
   header ul {
     float: right;
-    display: flex;
     list-style: none;
     margin: 20px;
   }
@@ -414,16 +415,10 @@ h3 {
   }
 
   .illusion {
-    display: block;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100px;
-  }
-
-  .daft,
-  .punk {
-    display: block;
   }
 
   .daft {
@@ -460,11 +455,6 @@ h3 {
     width: 80%;
     margin: auto;
     margin-top: 100px;
-    display: flex;
-  }
-
-  .prog {
-    display: block;
   }
 
   li img {
@@ -498,7 +488,6 @@ h3 {
   }
 
   .partners {
-    display: block;
     height: auto;
   }
 
@@ -513,11 +502,9 @@ h3 {
   .all ul {
     padding: 0;
     justify-content: center;
-    display: flex;
   }
 
   .wrapper {
-    display: flex;
     width: 85%;
     margin: auto;
   }
