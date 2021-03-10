@@ -134,6 +134,41 @@ button {
   .wrap {
     width: 80%;
   }
+
+  .header_top {
+    height: 4vh;
+    background-color: rgb(2, 2, 2);
+    display: block;
+  }
+
+  .social_nav {
+    font-size: 12px;
+    margin-right: 50px;
+    display: flex;
+    height: auto;
+    float: right;
+    list-style: none;
+  }
+
+  .social_nav li {
+    padding: 10px 10px;
+  }
+
+  .social_nav li a {
+    text-decoration: none;
+  }
+
+  .social_nav li a:hover {
+    color: #ec5242;
+  }
+
+  .t {
+    padding-top: 3px;
+  }
+
+  .social {
+    width: 16px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -153,25 +188,26 @@ button {
     display: none;
   }
 
-  header ul {
+  .menu_bottom_nav {
+    position: absolute;
+    right: 0;
     float: right;
     display: flex;
     list-style: none;
-    margin: 20px;
   }
 
-  header ul li {
+  .menu_bottom_nav li {
     margin-right: 60px;
     padding: 10px 0;
     transition: border-bottom 0.3s ease-in-out 0s;
   }
 
-  header ul li:hover {
+  .menu_bottom_nav li:hover {
     color: #ec5242;
     border-bottom: #d3d3d3 solid 2px;
   }
 
-  header ul li a {
+  .menu_bottom_nav li a {
     text-decoration: none;
   }
 
