@@ -397,6 +397,10 @@ h3 {
     margin-left: 60px;
   }
 
+  header {
+    height: 12vh;
+  }
+
   .header_bottom {
     width: 100%;
     right: 0;
