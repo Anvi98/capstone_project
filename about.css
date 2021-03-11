@@ -395,6 +395,10 @@ li img {
     width: 16px;
   }
 
+  header {
+    height: 12vh;
+  }
+
   .home {
     height: auto;
     display: block;
