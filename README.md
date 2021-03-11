@@ -33,7 +33,6 @@ For this first approach, I used:
 
 >## Live Demo
 [Live Demo Link](https://anvi98.github.io/capstone_project/) <br>
-[Presentation video Link](https://www.loom.com/share/4dc296b96c524a759c1be1394af8fd8c)
 
 ### Prerequisites
 
