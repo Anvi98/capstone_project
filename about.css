@@ -11,9 +11,8 @@ body {
 }
 
 footer,
-.home,
-.date {
-  background-color: #000;
+.home {
+  background-color: black;
 }
 
 footer {
@@ -35,12 +34,7 @@ header h2 {
   left: 100%;
 }
 
-header ul,
-footer,
-.daft,
-.punk,
-.illusion,
-.header_top {
+header ul {
   display: none;
 }
 
@@ -49,31 +43,20 @@ h3 {
   color: #d3d3d3;
 }
 
-.book {
-  color: #d3d3d3;
-  font-weight: bold;
-  border: none;
-  line-height: 2;
-  padding: 0.5rem 1rem;
-  min-width: 200px;
-  width: 40%;
-  max-width: 300px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background-color: #ec5242;
-}
-
-.book:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 #logo {
   position: absolute;
   z-index: 1;
   width: 40px;
   right: 0;
   margin-right: 20px;
+}
+
+.daft,
+.punk,
+.no_display,
+.illusion,
+.header_top {
+  display: none;
 }
 
 .header_bottom {
@@ -85,7 +68,8 @@ h3 {
   position: relative;
   text-align: center;
   padding-top: 25%;
-  min-height: 85vh;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .daft_mobile {
@@ -98,10 +82,6 @@ h3 {
   z-index: 1;
 }
 
-.partners {
-  display: none;
-}
-
 .type {
   font-size: 2rem;
   font-weight: lighter;
@@ -109,7 +89,7 @@ h3 {
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 2vh;
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -121,13 +101,56 @@ h3 {
 
 .details_home {
   width: 90%;
+  margin: 40px auto 20px auto;
   padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 60px;
   color: #d3d3d3;
-  outline: solid 1px #d3d3d3;
-  background-color: rgba(218, 201, 201, 0.301);
+  background-color: rgba(58, 58, 58, 0.301);
+}
+
+.contact_info {
+  color: #000;
+  padding: 30px 0 20px 0;
+}
+
+.contact {
+  text-decoration: underline;
+  font-size: 15px;
+  color: #ec5242;
+  padding-bottom: 30px;
+}
+
+.contact:hover {
+  cursor: pointer;
+}
+
+.all {
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  margin-top: 10px;
+  background-color: #ec5242;
+}
+
+.all ul {
+  padding: 0;
+  justify-content: center;
+}
+
+.all ul li {
+  justify-content: center;
+  margin: 10px;
+  list-style: none;
+}
+
+li img {
+  width: 40px;
+}
+
+.infos {
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 .date {
@@ -144,21 +167,41 @@ h3 {
   padding: 0 20px 45px 15px;
 }
 
+.all ul,
+.prog,
+.wrapper {
+  display: flex;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.wrapper p {
+  margin: 30px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.footer_logo {
+  position: absolute;
+  width: 100px;
+}
+
 .singers {
-  height: 80vh;
+  height: auto;
   text-align: center;
-  width: 95%;
+  padding-bottom: 70px;
+  width: 80%;
+  max-width: 400px;
   margin: auto;
   background-color: #fff;
 }
 
-.program_section {
-  text-align: center;
-  color: #d3d3d3;
-  height: auto;
-  background-image: url("img/program_img.jpg");
-  background-size: cover;
-  padding: 10px 20px 20px 20px;
+.last_concert {
+  color: #000;
+  padding: 10px;
 }
 
 .section_title {
@@ -166,6 +209,8 @@ h3 {
   text-align: center;
   background-color: #d3d3d3;
   padding: 10px;
+  width: 90%;
+  margin: auto;
   margin-bottom: 20px;
 }
 
@@ -183,7 +228,6 @@ h3 {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -214,7 +258,7 @@ h3 {
 
 .singers h2 {
   margin-top: 30px;
-  color: #272a31;
+  color: #d3d3d3;
 }
 
 .grid {
@@ -228,20 +272,54 @@ h3 {
 .artist1,
 .artist2 {
   position: relative;
+  justify-content: center;
+  width: 100%;
 }
 
-.no_display {
-  display: none;
+.artist1 h3,
+.artist1 p,
+.artist2 h3,
+.artist2 p {
+  position: absolute;
+}
+
+.year {
+  z-index: 1;
+  color: #fff;
+  font-size: 2rem;
+  top: 35%;
+  left: 40%;
+}
+
+.event {
+  z-index: 1;
+  color: #fff;
+  top: 65%;
+  margin-left: 15%;
 }
 
 .pic {
   z-index: 2;
   top: 10px;
   left: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.artist1::after,
+.artist2::after {
+  content: '';
   position: absolute;
-  width: 120px;
-  height: 120px;
-  float: left;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: -moz-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* Opera 11.10+ */
+  background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* W3C */
 }
 
 .artist_info {
@@ -281,28 +359,11 @@ h3 {
   width: 40px;
 }
 
-.see_more {
-  width: 90%;
-  padding: 15px;
-  margin: auto;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: black;
-  background-color: transparent;
-  border: 1px solid #ec5242;
-}
-
-.arrow {
-  width: 12px;
-  margin-left: 5px;
-}
-
 @media screen and (min-width: 768px) {
   .header_top {
+    display: block;
     height: 4vh;
     background-color: rgb(2, 2, 2);
-    display: block;
   }
 
   .social_nav {
@@ -335,16 +396,13 @@ h3 {
   }
 
   .home {
-    height: 100vh;
+    height: auto;
     display: block;
-    background: url("img/punk_home.jpg") no-repeat;
-    background-size: contain;
     background-color: black;
     padding-top: 110px;
   }
 
   .daft_mobile,
-  .details_home,
   .place {
     display: none;
   }
@@ -354,37 +412,13 @@ h3 {
     padding: 0;
   }
 
+  .details_home {
+    font-size: 25px;
+    width: 70%;
+  }
+
   .type {
     font-size: 40px;
-  }
-
-  .daft,
-  .punk {
-    display: block;
-  }
-
-  .daft {
-    font-size: 6rem;
-    letter-spacing: 15px;
-    font-weight: bold;
-    top: 40%;
-    left: 5%;
-    position: absolute;
-    color: #d3d3d3;
-  }
-
-  .punk {
-    position: absolute;
-    color: #ec5242;
-    font-weight: bold;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    font-size: 6rem;
-    letter-spacing: 15px;
-    top: 50%;
-    left: 5%;
   }
 }
 
@@ -397,34 +431,33 @@ h3 {
     margin-left: 60px;
   }
 
-  .header_bottom {
-    width: 100%;
-    right: 0;
+  .home {
+    background: url("https://www.thisiscolossal.com/wp-content/uploads/2014/03/130304.gif") no-repeat center;
+    background-size: contain;
+    background-color: black;
+    padding-top: 110px;
   }
 
   .menu {
     display: none;
   }
 
-  footer,
-  .illusion,
-  .daft,
-  .punk,
-  .prog {
+  footer {
     display: block;
+    height: 25vh;
   }
 
-  .menu_bottom_nav {
+  header ul {
     position: absolute;
     right: 0;
+    float: right;
     list-style: none;
   }
 
   .menu_bottom_nav,
   .main_program,
   .all ul,
-  .wrapper,
-  .partners {
+  .wrapper {
     display: flex;
   }
 
@@ -453,7 +486,7 @@ h3 {
     border-bottom: #d3d3d3 solid 2px;
   }
 
-  .menu_bottom_nav li a {
+  .menu_bottom_nav a {
     text-decoration: none;
   }
 
@@ -466,45 +499,22 @@ h3 {
     font-size: 80px;
   }
 
-  .home {
-    padding-top: 110px;
-  }
-
   .illusion {
+    display: block;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100px;
   }
 
-  .daft {
-    font-size: 8.5rem;
-    letter-spacing: 15px;
-    font-weight: bold;
-    top: 50%;
-    left: 5%;
-    position: absolute;
-    color: #d3d3d3;
-  }
-
-  .punk {
-    position: absolute;
-    color: #ec5242;
-    font-weight: bold;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    font-size: 8.5rem;
-    letter-spacing: 15px;
-    top: 68%;
-    left: 5%;
-  }
-
   .section_title {
     margin: auto;
     margin-top: 30px;
     width: 30%;
+  }
+
+  .prog {
+    display: block;
   }
 
   li img {
@@ -526,19 +536,22 @@ h3 {
   .grid {
     width: 70%;
     margin: auto;
-    margin-top: 8%;
-    grid-template-rows: 150px 150px;
+    margin-top: 2%;
+    grid-template-rows: 200px;
     grid-template-columns: 45% 45%;
     grid-gap: 10%;
   }
 
   .singers {
     height: auto;
-    padding-bottom: 130px;
+    max-width: 80%;
+    padding-bottom: 30px;
   }
 
   .partners {
+    display: block;
     height: auto;
+    margin-bottom: 100px;
   }
 
   .all {
